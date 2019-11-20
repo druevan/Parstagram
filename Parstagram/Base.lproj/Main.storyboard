@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -91,47 +91,43 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="441" id="NX5-XT-Jps" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="441"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="412" id="NX5-XT-Jps" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="412"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NX5-XT-Jps" id="zVK-OM-NFn">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="441"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="412"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L2g-bb-fvN">
-                                                    <rect key="frame" x="8" y="35" width="359" height="339"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="367"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="359" id="i6H-PM-t93"/>
+                                                        <constraint firstAttribute="width" secondItem="L2g-bb-fvN" secondAttribute="height" multiplier="359:367" id="d8U-j9-n3W"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wow, I love photos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMq-LK-Q0K">
-                                                    <rect key="frame" x="102" y="396" width="148" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="148" id="idM-OJ-IKs"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2e-C3-Aat">
+                                                    <rect key="frame" x="8" y="383" width="28" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2e-C3-Aat">
-                                                    <rect key="frame" x="32" y="396" width="29" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="29" id="yOC-hk-Gr1"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wow, I love photos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMq-LK-Q0K">
+                                                    <rect key="frame" x="44" y="383" width="142.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="G2e-C3-Aat" secondAttribute="bottom" constant="13" id="07E-f2-hmf"/>
-                                                <constraint firstItem="G2e-C3-Aat" firstAttribute="top" secondItem="L2g-bb-fvN" secondAttribute="bottom" constant="22" id="2U9-z6-eUp"/>
-                                                <constraint firstItem="L2g-bb-fvN" firstAttribute="centerX" secondItem="zVK-OM-NFn" secondAttribute="centerX" id="C8c-bg-Z6O"/>
-                                                <constraint firstItem="oMq-LK-Q0K" firstAttribute="leading" secondItem="G2e-C3-Aat" secondAttribute="trailing" constant="41" id="Vef-Bp-dq0"/>
-                                                <constraint firstItem="G2e-C3-Aat" firstAttribute="firstBaseline" secondItem="oMq-LK-Q0K" secondAttribute="firstBaseline" id="cI9-DY-uo5"/>
-                                                <constraint firstItem="L2g-bb-fvN" firstAttribute="top" secondItem="zVK-OM-NFn" secondAttribute="topMargin" constant="24" id="d4b-Qg-CeB"/>
-                                                <constraint firstItem="G2e-C3-Aat" firstAttribute="leading" secondItem="zVK-OM-NFn" secondAttribute="leadingMargin" constant="17" id="fmy-Zh-A9N"/>
-                                                <constraint firstItem="G2e-C3-Aat" firstAttribute="baseline" secondItem="oMq-LK-Q0K" secondAttribute="baseline" id="ll7-lr-ZG9"/>
+                                                <constraint firstItem="oMq-LK-Q0K" firstAttribute="leading" secondItem="G2e-C3-Aat" secondAttribute="trailing" constant="8" id="9X2-yd-nne"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oMq-LK-Q0K" secondAttribute="trailing" constant="8" id="BKW-p2-SnS"/>
+                                                <constraint firstItem="L2g-bb-fvN" firstAttribute="top" secondItem="zVK-OM-NFn" secondAttribute="top" constant="8" id="JlZ-cE-2DL"/>
+                                                <constraint firstItem="L2g-bb-fvN" firstAttribute="leading" secondItem="zVK-OM-NFn" secondAttribute="leading" constant="8" id="Lcj-sn-4pG"/>
+                                                <constraint firstItem="G2e-C3-Aat" firstAttribute="top" secondItem="L2g-bb-fvN" secondAttribute="bottom" constant="8" id="SMp-vM-NTM"/>
+                                                <constraint firstItem="oMq-LK-Q0K" firstAttribute="top" secondItem="L2g-bb-fvN" secondAttribute="bottom" constant="8" id="VpO-Zb-lgS"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="G2e-C3-Aat" secondAttribute="bottom" constant="8" id="eYX-4D-SBO"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oMq-LK-Q0K" secondAttribute="bottom" constant="8" id="osY-CI-h2u"/>
+                                                <constraint firstAttribute="trailing" secondItem="L2g-bb-fvN" secondAttribute="trailing" constant="8" id="peg-hi-zMb"/>
+                                                <constraint firstItem="G2e-C3-Aat" firstAttribute="leading" secondItem="zVK-OM-NFn" secondAttribute="leading" constant="8" id="yEc-En-MGR"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -145,10 +141,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="gFi-sC-Tbz" firstAttribute="centerY" secondItem="fn0-0R-Tyl" secondAttribute="centerY" id="00c-c6-l3p"/>
-                            <constraint firstItem="gFi-sC-Tbz" firstAttribute="bottom" secondItem="U3R-ny-vPW" secondAttribute="bottom" id="BGb-sn-bL0"/>
-                            <constraint firstItem="gFi-sC-Tbz" firstAttribute="centerX" secondItem="fn0-0R-Tyl" secondAttribute="centerX" id="hO0-aC-nK5"/>
-                            <constraint firstItem="gFi-sC-Tbz" firstAttribute="leading" secondItem="U3R-ny-vPW" secondAttribute="leading" id="wA1-VI-SF1"/>
+                            <constraint firstItem="gFi-sC-Tbz" firstAttribute="top" secondItem="fn0-0R-Tyl" secondAttribute="top" id="5NN-rl-sap"/>
+                            <constraint firstItem="gFi-sC-Tbz" firstAttribute="leading" secondItem="U3R-ny-vPW" secondAttribute="leading" id="g9Q-ii-skN"/>
+                            <constraint firstItem="gFi-sC-Tbz" firstAttribute="bottom" secondItem="U3R-ny-vPW" secondAttribute="bottom" id="uBJ-M6-W6f"/>
+                            <constraint firstItem="gFi-sC-Tbz" firstAttribute="trailing" secondItem="U3R-ny-vPW" secondAttribute="trailing" id="xuB-C4-wre"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="U3R-ny-vPW"/>
                     </view>
