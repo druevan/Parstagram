@@ -33,7 +33,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
         
-        post["image"] =
+        post["image"] = file
         
         post.saveInBackground { (success, error ) in
             if success {
