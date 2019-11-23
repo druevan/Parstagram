@@ -206,7 +206,7 @@
                         <viewLayoutGuide key="safeArea" id="U3R-ny-vPW"/>
                     </view>
                     <navigationItem key="navigationItem" id="gUD-ZL-Usk">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="MbT-ic-Lew" userLabel="Logout">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="MbT-ic-Lew" userLabel="Logout">
                             <connections>
                                 <action selector="onLogoutButton:" destination="B2q-KS-onx" id="AwZ-EK-M5N"/>
                             </connections>
